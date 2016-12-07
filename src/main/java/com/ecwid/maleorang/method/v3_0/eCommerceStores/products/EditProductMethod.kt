@@ -3,6 +3,7 @@ package com.ecwid.maleorang.method.v3_0.lists.members
 import com.ecwid.maleorang.MailchimpMethod
 import com.ecwid.maleorang.MailchimpObject
 import com.ecwid.maleorang.annotation.*
+import com.ecwid.maleorang.method.v3_0.eCommerceStores.orders.EditOrderMethod
 import com.ecwid.maleorang.method.v3_0.eCommerceStores.products.ProductInfo
 import com.ecwid.maleorang.method.v3_0.eCommerceStores.products.VariantInfo
 import java.util.*
@@ -19,6 +20,20 @@ sealed class EditProductMethod : MailchimpMethod<ProductInfo>() {
             @JvmField
             @PathParam
             val store_id: String
+    ) : EditProductMethod()
+
+    /**
+     * [Update a specific product.](http://developer.mailchimp.com/documentation/mailchimp/reference/ecommerce/stores/products/#edit-patch_ecommerce_stores_store_id_products_product_id)
+     */
+    @Method(httpMethod = HttpMethod.PATCH, version = APIVersion.v3_0, path = "/ecommerce/stores/{store_id}/products/{product_id}")
+    class Update(
+            @JvmField
+            @PathParam
+            val store_id: String,
+
+            @JvmField
+            @PathParam
+            val product_id: String
     ) : EditProductMethod()
 
     @JvmField

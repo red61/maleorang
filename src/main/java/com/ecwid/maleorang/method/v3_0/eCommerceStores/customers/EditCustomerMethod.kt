@@ -44,7 +44,7 @@ sealed class EditCustomerMethod : MailchimpMethod<CustomerInfo>() {
             val store_id: String,
 
             @JvmField
-            @Field
+            @PathParam
             val customer_id: String
     ) : EditCustomerMethod()
 

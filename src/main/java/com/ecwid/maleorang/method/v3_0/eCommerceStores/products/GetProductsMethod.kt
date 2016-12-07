@@ -14,7 +14,7 @@ class GetProductsMethod(
         @JvmField
         @PathParam
         val store_id: String
-) : MailchimpMethod<GetMembersMethod.Response>() {
+) : MailchimpMethod<GetProductsMethod.Response>() {
 
     @JvmField
     @QueryStringParam

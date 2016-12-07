@@ -33,6 +33,10 @@ sealed class EditCartMethod : MailchimpMethod<CartInfo>() {
 
     @JvmField
     @Field
+    var id: String? = null
+
+    @JvmField
+    @Field
     var customer: CustomerInfo? = null
 
     @JvmField

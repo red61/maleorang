@@ -39,4 +39,12 @@ class VariantInfo : MailchimpObject() {
     @JvmField
     @Field
     var visibility: String? = null
+
+    @JvmField
+    @Field
+    var created_at: String? = null
+
+    @JvmField
+    @Field
+    var updated_at: String? = null
 }

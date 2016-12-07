@@ -22,7 +22,7 @@ class LineInfo : MailchimpObject() {
 
     @JvmField
     @Field
-    var product_variant_id: Boolean? = null
+    var product_variant_id: String? = null
 
     @JvmField
     @Field

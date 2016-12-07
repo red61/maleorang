@@ -44,4 +44,12 @@ class AddressInfo : MailchimpObject() {
     @JvmField
     @Field
     var latitude: Double? = null
+
+    @JvmField
+    @Field
+    var phone: String? = null
+
+    @JvmField
+    @Field
+    var company: String? = null
 }

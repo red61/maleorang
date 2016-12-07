@@ -43,11 +43,11 @@ sealed class EditStoreMethod : MailchimpMethod<StoreInfo>() {
 
     @JvmField
     @Field
-    var domain: MailchimpObject? = null
+    var domain: String? = null
 
     @JvmField
     @Field
-    var email_address: MailchimpObject? = null
+    var email_address: String? = null
 
     @JvmField
     @Field
@@ -55,11 +55,11 @@ sealed class EditStoreMethod : MailchimpMethod<StoreInfo>() {
 
     @JvmField
     @Field
-    var money_format: Boolean? = null
+    var money_format: String? = null
 
     @JvmField
     @Field
-    var primary_locale: MailchimpObject? = null
+    var primary_locale: String? = null
 
     @JvmField
     @Field
@@ -67,7 +67,7 @@ sealed class EditStoreMethod : MailchimpMethod<StoreInfo>() {
 
     @JvmField
     @Field
-    var phone: Date? = null
+    var phone: String? = null
 
     @JvmField
     @Field
