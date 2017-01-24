@@ -5,6 +5,7 @@ import com.ecwid.maleorang.annotation.*
 import com.ecwid.maleorang.method.v3_0.eCommerceStores.AddressInfo
 import com.ecwid.maleorang.method.v3_0.eCommerceStores.carts.CustomerInfo
 import com.ecwid.maleorang.method.v3_0.eCommerceStores.carts.LineInfo
+import java.util.*
 
 /**
  * Base class for order create or update operations.
@@ -76,15 +77,15 @@ sealed class EditOrderMethod : MailchimpMethod<OrderInfo>() {
 
     @JvmField
     @Field
-    var processed_at_foreign: String? = null
+    var processed_at_foreign: Date? = null
 
     @JvmField
     @Field
-    var cancelled_at_foreign: String? = null
+    var cancelled_at_foreign: Date? = null
 
     @JvmField
     @Field
-    var updated_at_foreign: String? = null
+    var updated_at_foreign: Date? = null
 
     @JvmField
     @Field
