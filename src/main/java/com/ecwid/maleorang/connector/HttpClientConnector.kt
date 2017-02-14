@@ -68,6 +68,5 @@ open class HttpClientConnector(builder: HttpClientBuilder) : Connector {
                     defaultMaxPerRoute = 10
                     maxTotal = 10
                 })
-                .setConnectionManagerShared(true)
     }
 }
